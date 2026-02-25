@@ -17,10 +17,7 @@ object CommandGive : Subcommand(
     "ecomobs.command.give",
     false
 ) {
-    override fun onExecute(
-        sender: CommandSender,
-        args: List<String>
-    ) {
+    override fun onExecute(sender: CommandSender, args: List<String>) {
         if (args.isEmpty()) {
             sender.sendMessage(plugin.langYml.getMessage("needs-player"))
             return

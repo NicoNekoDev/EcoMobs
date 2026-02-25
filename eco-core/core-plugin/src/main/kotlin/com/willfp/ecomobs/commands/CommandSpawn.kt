@@ -19,10 +19,7 @@ object CommandSpawn : Subcommand(
     "ecomobs.command.spawn",
     false
 ) {
-    override fun onExecute(
-        sender: CommandSender,
-        args: List<String>
-    ) {
+    override fun onExecute(sender: CommandSender, args: List<String>) {
         if (args.isEmpty()) {
             sender.sendMessage(plugin.langYml.getMessage("specify-mob"))
             return

@@ -10,10 +10,7 @@ object CommandEcoMobs : PluginCommand(
     "ecomobs.command.ecomobs",
     false
 ) {
-    override fun onExecute(
-        sender: CommandSender,
-        args: List<String>
-    ) {
+    override fun onExecute(sender: CommandSender, args: List<String>) {
         sender.sendMessage(plugin.langYml.getMessage("invalid-command"))
     }
 

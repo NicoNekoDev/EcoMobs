@@ -54,7 +54,7 @@ object SpawnMethodFactoryCustom : SpawnMethodFactory("custom") {
         }
 
         override fun onStop() {
-            task?.cancel()
+            task?.cancelTask()
         }
 
         private fun tick() {
